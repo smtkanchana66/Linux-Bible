@@ -1,10 +1,10 @@
 # Linux Command Bible
 
 <p align="center">
-  <img src="" width="500" height="500" />
+  <img src="https://github.com/kanchana66/Linux-Bible/blob/main/res/linux.gif" width="auto" height="400" />
 </p>
 
-Welcome to the Linux Command Bible repository! This guide aims to be a comprehensive resource for learning and mastering Linux commands.
+
 
 ## Table of Contents
 
