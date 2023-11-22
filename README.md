@@ -1,5 +1,9 @@
 # Linux Command Bible
 
+<p align="center">
+  <img src="" width="500" height="500" />
+</p>
+
 Welcome to the Linux Command Bible repository! This guide aims to be a comprehensive resource for learning and mastering Linux commands.
 
 ## Table of Contents
