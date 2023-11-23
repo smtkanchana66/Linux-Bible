@@ -32,6 +32,35 @@ If you're new to Linux, start here! This section will cover the basics, includin
 
 Explore fundamental Linux commands that every user should know. From navigating the file system to managing files and directories.
 
+### Change Directory
+```bash
+cd [directory]
+```
+### List Files
+```bash
+ls
+```
+### Make Directory
+```bash
+mkdir [directory_name]
+```
+### Create a File
+```bash
+touch [file_name]
+```
+### Copy File
+```bash
+cp [source_file] [destination]
+```
+### Move/Rename File
+```bash
+mv [old_name] [new_name]
+```
+### Remove/Delete File
+```bash
+rm [file_name]
+```
+
 ## File and Directory Management
 
 Learn about more advanced file and directory operations, permissions, and other essential file-related tasks.
