@@ -1,7 +1,9 @@
+
+
 # Linux Command Bible
 
 <p align="center">
-  <img src="https://github.com/kanchana66/Linux-Bible/blob/main/res/linux.gif" width="auto" height="400" />
+  <img src="https://github.com/smtkanchana66/Linux-Bible/blob/main/res/linux.png" />
 </p>
 
 
@@ -20,7 +22,7 @@
 10. [Contributing](#contributing)
 11. [License](#license)
 
-## Introduction
+# Introduction
 
 In this section, provide a brief overview of the purpose of the Linux Command Bible and why users should find it valuable.
 
@@ -28,37 +30,48 @@ In this section, provide a brief overview of the purpose of the Linux Command Bi
 
 If you're new to Linux, start here! This section will cover the basics, including how to access the command line and essential concepts.
 
-## Basic Commands
-
-Explore fundamental Linux commands that every user should know. From navigating the file system to managing files and directories.
-
-### Change Directory
+# Basic Commands
+#### Change Directory
 ```bash
 cd [directory]
 ```
-### List Files
+#### List Files
 ```bash
 ls
 ```
-### Make Directory
+#### Make Directory
 ```bash
 mkdir [directory_name]
 ```
-### Create a File
+#### Create a File
 ```bash
 touch [file_name]
 ```
-### Copy File
+#### Copy File
 ```bash
 cp [source_file] [destination]
 ```
-### Move/Rename File
+#### Move/Rename File
 ```bash
 mv [old_name] [new_name]
 ```
-### Remove/Delete File
+#### Remove/Delete File
 ```bash
 rm [file_name]
+```
+#### Open a File in a Text Editor (e.g., Nano):
+```bash
+nano filename
+```
+# Git command
+
+#### Clone a Repository from GitHub:
+```bash
+git clone https://github.com/username/repository.git
+```
+### Check Git Status:
+```bash
+git status
 ```
 
 ## File and Directory Management
