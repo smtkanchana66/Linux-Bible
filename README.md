@@ -61,7 +61,11 @@ rm [file_name]
 ```
 #### Open a File in a Text Editor (e.g., Nano):
 ```bash
-nano filename
+nano [filename]
+```
+#### Open a File in a Text Editor (e.g., vi):
+```bash
+vi [filename]
 ```
 # Git command
 
