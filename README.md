@@ -154,6 +154,15 @@ sudo apt install packagename
 ```bash
 sudo reboot
 ```
+## System Logs
+### View System Logs:
+```bash
+journalctl
+```
+### Check Last System Reboot Time:
+```bash
+last reboot
+```
 
 ## Network Commands
 
