@@ -100,13 +100,14 @@ git config --global user.name "Your Name"
 git status
 ```
 
-## File and Directory Management
-
-Learn about more advanced file and directory operations, permissions, and other essential file-related tasks.
-
-## System Administration
+# System Administration
 
 Delve into system administration commands for managing users, processes, and other system-related tasks.
+
+### Display System Information:
+```bash
+uname -a
+```
 
 ## Network Commands
 
