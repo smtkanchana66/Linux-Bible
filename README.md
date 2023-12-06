@@ -108,6 +108,10 @@ Delve into system administration commands for managing users, processes, and oth
 ```bash
 uname -a
 ```
+### View CPU Information:
+```bash
+lscpu
+```
 
 ## Network Commands
 
