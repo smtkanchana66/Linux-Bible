@@ -77,7 +77,10 @@ git clone https://github.com/username/repository.git
 ```bash
 git status
 ```
-
+### Stage your changes:
+```bash
+git add README.md
+```
 ## File and Directory Management
 
 Learn about more advanced file and directory operations, permissions, and other essential file-related tasks.
