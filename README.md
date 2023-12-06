@@ -116,6 +116,27 @@ lscpu
 ```bash
 free -m
 ```
+### Disk Space Usage:
+```bash
+df -h
+```
+## User Management
+### Add a User:
+```bash
+sudo adduser username
+```
+### Add a User to the sudo Group:
+```bash
+sudo usermod -aG sudo username
+```
+### Change User Password:
+```bash
+passwd username
+```
+### Delete a User:
+``` bash
+sudo deluser username
+```
 
 ## Network Commands
 
