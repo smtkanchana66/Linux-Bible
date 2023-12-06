@@ -89,6 +89,17 @@ git commit -m "Updated Linux Bible in README.md"
 ```bash
 git push origin master
 ```
+If you're working on a branch other than master, replace it with the appropriate branch name.
+If this is your first time pushing to the repository, Git may prompt you to configure your username and email:
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+### Check the status:
+```bash
+git status
+```
+
 ## File and Directory Management
 
 Learn about more advanced file and directory operations, permissions, and other essential file-related tasks.
