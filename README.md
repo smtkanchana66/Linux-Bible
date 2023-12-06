@@ -81,6 +81,10 @@ git status
 ```bash
 git add README.md
 ```
+### Commit the changes:
+```bash
+git commit -m "Updated Linux Bible in README.md"
+```
 ## File and Directory Management
 
 Learn about more advanced file and directory operations, permissions, and other essential file-related tasks.
