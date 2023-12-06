@@ -112,6 +112,10 @@ uname -a
 ```bash
 lscpu
 ```
+### Check Memory Usage:
+```bash
+free -m
+```
 
 ## Network Commands
 
