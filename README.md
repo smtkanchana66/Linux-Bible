@@ -163,6 +163,290 @@ journalctl
 ```bash
 last reboot
 ```
+<!--
+Certainly! Here are some additional system administration commands for various tasks:
+
+### Process Management:
+
+15. **List Running Processes:**
+    ```bash
+    ps aux
+    ```
+    Displays a list of all running processes with detailed information.
+
+16. **Kill a Process:**
+    ```bash
+    kill PID
+    ```
+    Terminates a running process with the specified process ID.
+
+17. **Check System Load:**
+    ```bash
+    uptime
+    ```
+    Shows the current system load and uptime.
+
+18. **Monitor System Resources:**
+    ```bash
+    top
+    ```
+    Provides a dynamic, real-time view of the system processes and their resource usage.
+
+### Network Management:
+
+19. **Display Network Configuration:**
+    ```bash
+    ifconfig
+    ```
+    Shows the network interfaces and their configurations.
+
+20. **Check Open Ports:**
+    ```bash
+    netstat -tuln
+    ```
+    Lists all open network ports.
+
+21. **Verify Connectivity:**
+    ```bash
+    ping example.com
+    ```
+    Tests network connectivity to a specific host.
+
+22. **View Network Statistics:**
+    ```bash
+    netstat -s
+    ```
+    Displays detailed network statistics.
+
+### Filesystem Management:
+
+23. **Check Filesystem Integrity:**
+    ```bash
+    fsck /dev/sda1
+    ```
+    Checks and repairs the integrity of a filesystem on a specified partition.
+
+24. **Find Large Files:**
+    ```bash
+    find / -type f -size +100M
+    ```
+    Searches for files larger than 100 megabytes on the system.
+
+### Security:
+
+25. **Update Security Packages:**
+    ```bash
+    sudo apt-get install unattended-upgrades
+    sudo dpkg-reconfigure --priority=low unattended-upgrades
+    ```
+    Configures unattended upgrades for automatic security updates.
+
+26. **Check for Rootkits:**
+    ```bash
+    rkhunter --check
+    ```
+    Scans for rootkits on the system.
+
+27. **Firewall Configuration (using UFW):**
+    ```bash
+    sudo ufw status
+    sudo ufw allow 22
+    sudo ufw enable
+    ```
+    Checks the firewall status, allows SSH traffic, and enables the firewall.
+
+These commands cover a broad range of system administration tasks. Depending on your specific environment and needs, you may use these commands or explore additional ones. Always be cautious when making system-level changes, especially in production environments. If you have specific questions or need guidance on a particular task, feel free to ask!
+
+Certainly! Let's explore some additional system administration commands for different aspects of managing a Linux system:
+
+### System Information:
+
+28. **List USB Devices:**
+    ```bash
+    lsusb
+    ```
+    Displays information about USB devices connected to the system.
+
+29. **Check PCI Devices:**
+    ```bash
+    lspci
+    ```
+    Lists PCI devices connected to the system.
+
+### User and Group Management:
+
+30. **List All Users:**
+    ```bash
+    getent passwd
+    ```
+    Shows a list of all user accounts on the system.
+
+31. **List All Groups:**
+    ```bash
+    getent group
+    ```
+    Displays a list of all groups on the system.
+
+32. **Change User's Primary Group:**
+    ```bash
+    usermod -g newgroup username
+    ```
+    Changes the primary group of a user.
+
+### Disk Management:
+
+33. **Check Disk I/O Statistics:**
+    ```bash
+    iostat
+    ```
+    Shows disk I/O statistics, including read and write rates.
+
+34. **View Filesystem Mount Points:**
+    ```bash
+    df -hT
+    ```
+    Displays information about mounted filesystems, including their type.
+
+### System Performance Monitoring:
+
+35. **Monitor CPU Usage (using `htop`):**
+    ```bash
+    sudo apt install htop
+    htop
+    ```
+    Interactive process viewer that provides a visual representation of CPU and memory usage.
+
+36. **Check System Temperature (using `lm-sensors`):**
+    ```bash
+    sudo apt install lm-sensors
+    sensors
+    ```
+    Shows temperature information for various system components.
+
+### Software Package Management:
+
+37. **Search for a Package:**
+    ```bash
+    apt search packagename
+    ```
+    Searches for packages related to the specified name.
+
+38. **Remove Unused Dependencies:**
+    ```bash
+    sudo apt autoremove
+    ```
+    Removes packages that were installed as dependencies but are no longer needed.
+
+### System Backup and Restore:
+
+39. **Create a System Backup (using `tar`):**
+    ```bash
+    tar -cvzf backup.tar.gz /path/to/backup
+    ```
+    Creates a compressed archive of specified files or directories.
+
+40. **Restore from Backup:**
+    ```bash
+    tar -xvzf backup.tar.gz -C /path/to/restore
+    ```
+    Extracts files from a compressed archive to the specified restore path.
+
+These commands offer a more comprehensive view of system administration tasks, covering areas such as hardware, user management, disk management, performance monitoring, and more. Always ensure you have a good understanding of the commands and their implications before using them in a production environment. If you have specific tasks or scenarios in mind, feel free to ask for more targeted guidance!
+
+Certainly! Let's delve into some additional system administration commands and tasks for a more comprehensive overview:
+
+### System Maintenance and Updates:
+
+41. **Check for System Updates (using `apt`):**
+    ```bash
+    sudo apt update
+    ```
+    Refreshes the package lists to check for available updates.
+
+42. **Clean Package Cache:**
+    ```bash
+    sudo apt clean
+    ```
+    Removes downloaded package files from the package cache.
+
+43. **Monitor System Logs (using `journalctl`):**
+    ```bash
+    journalctl -xe
+    ```
+    Provides a detailed view of the system logs, aiding in troubleshooting.
+
+### Network Configuration and Troubleshooting:
+
+44. **Configure Network Interfaces:**
+    ```bash
+    sudo nano /etc/network/interfaces
+    ```
+    Edit the network configuration file to set up static IP addresses and other network parameters.
+
+45. **DNS Troubleshooting (using `nslookup` or `dig`):**
+    ```bash
+    nslookup example.com
+    ```
+    or
+    ```bash
+    dig example.com
+    ```
+    Query DNS servers to troubleshoot and verify domain resolution.
+
+### Security and Permissions:
+
+46. **Check File Permissions:**
+    ```bash
+    ls -l filename
+    ```
+    Displays detailed file permissions, owners, and groups.
+
+47. **Check System Security Updates (using `unattended-upgrades`):**
+    ```bash
+    cat /var/log/unattended-upgrades/unattended-upgrades.log
+    ```
+    Reviews logs for automatic security updates.
+
+### System Monitoring and Resource Usage:
+
+48. **Check System Resource Usage (using `sar`):**
+    ```bash
+    sudo apt install sysstat
+    sar -u
+    ```
+    Collects, reports, or saves system activity information.
+
+49. **Monitor Disk Space Usage (using `du`):**
+    ```bash
+    du -h
+    ```
+    Shows the disk space usage of files and directories in the current location.
+
+### Advanced Process Management:
+
+50. **Monitor Process Resources (using `pidstat`):**
+    ```bash
+    sudo apt install sysstat
+    pidstat 1
+    ```
+    Monitors resource usage of processes, including CPU, memory, and I/O.
+
+51. **Background Process Management (using `nohup`):**
+    ```bash
+    nohup command &
+    ```
+    Runs a command immune to hangups, with output directed to a file.
+
+### Customization and Scripting:
+
+52. **Custom Bash Scripts:**
+    Create custom Bash scripts to automate repetitive tasks or perform complex operations.
+
+53. **Configure Shell Environment (using `.bashrc`):**
+    Edit the `.bashrc` file to customize the shell environment for users.
+
+These commands cover a broader range of tasks, including network configuration, security, permissions, advanced process management, and customization. Always exercise caution, especially when working with system configurations and sensitive data. If you have specific scenarios or tasks in mind, feel free to ask for more detailed guidance!
+-->
 
 ## Network Commands
 
