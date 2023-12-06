@@ -137,6 +137,23 @@ passwd username
 ``` bash
 sudo deluser username
 ```
+## System Maintenance
+### Update Package Lists:
+```bash
+sudo apt update
+```
+### Upgrade Installed Packages:
+```bash
+sudo apt upgrade
+```
+### Install a New Package:
+```bash
+sudo apt install packagename
+```
+### Restart the System:
+```bash
+sudo reboot
+```
 
 ## Network Commands
 
