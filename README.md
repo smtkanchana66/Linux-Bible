@@ -84,6 +84,10 @@ git add README.md
 ### Commit the changes:
 ```bash
 git commit -m "Updated Linux Bible in README.md"
+``` 
+### Push the changes to GitHub:
+```bash
+git push origin master
 ```
 ## File and Directory Management
 
