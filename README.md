@@ -163,27 +163,23 @@ journalctl
 ```bash
 last reboot
 ```
-<!--
+
 Certainly! Here are some additional system administration commands for various tasks:
 
 ### Process Management:
 
-15. **List Running Processes:**
-    ```bash
-    ps aux
-    ```
-    Displays a list of all running processes with detailed information.
-
-16. **Kill a Process:**
-    ```bash
-    kill PID
-    ```
-    Terminates a running process with the specified process ID.
-
-17. **Check System Load:**
-    ```bash
-    uptime
-    ```
+### List Running Processes:**
+```bash
+ps aux
+```
+### Kill a Process:**
+```bash
+kill PID
+```
+### Check System Load:**
+```bash
+uptime
+```
     Shows the current system load and uptime.
 
 18. **Monitor System Resources:**
