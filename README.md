@@ -168,51 +168,42 @@ Certainly! Here are some additional system administration commands for various t
 
 ### Process Management:
 
-### List Running Processes:**
+### List Running Processes:
 ```bash
 ps aux
 ```
-### Kill a Process:**
+### Kill a Process:
 ```bash
 kill PID
 ```
-### Check System Load:**
+### Check System Load:
 ```bash
 uptime
 ```
-    Shows the current system load and uptime.
 
-18. **Monitor System Resources:**
-    ```bash
-    top
-    ```
-    Provides a dynamic, real-time view of the system processes and their resource usage.
+### Monitor System Resources:
+```bash
+top
+```
 
-### Network Management:
+## Network Management:
+### Display Network Configuration:
+```bash
+ifconfig
+```
+### Check Open Ports:
+```bash
+netstat -tuln
+```
+### Verify Connectivity:
+```bash
+ping example.com
+```
+### View Network Statistics:
+```bash
+netstat -s
+```
 
-19. **Display Network Configuration:**
-    ```bash
-    ifconfig
-    ```
-    Shows the network interfaces and their configurations.
-
-20. **Check Open Ports:**
-    ```bash
-    netstat -tuln
-    ```
-    Lists all open network ports.
-
-21. **Verify Connectivity:**
-    ```bash
-    ping example.com
-    ```
-    Tests network connectivity to a specific host.
-
-22. **View Network Statistics:**
-    ```bash
-    netstat -s
-    ```
-    Displays detailed network statistics.
 
 ### Filesystem Management:
 
