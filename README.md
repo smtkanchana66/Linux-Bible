@@ -205,12 +205,11 @@ netstat -s
 ```
 
 
-### Filesystem Management:
-
-23. **Check Filesystem Integrity:**
-    ```bash
-    fsck /dev/sda1
-    ```
+## Filesystem Management:
+### Check Filesystem Integrity:**
+```bash
+fsck /dev/sda1
+```
     Checks and repairs the integrity of a filesystem on a specified partition.
 
 24. **Find Large Files:**
