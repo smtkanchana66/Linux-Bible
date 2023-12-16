@@ -164,8 +164,6 @@ journalctl
 last reboot
 ```
 
-Certainly! Here are some additional system administration commands for various tasks:
-
 ### Process Management:
 
 ### List Running Processes:
@@ -210,12 +208,10 @@ netstat -s
 ```bash
 fsck /dev/sda1
 ```
-    Checks and repairs the integrity of a filesystem on a specified partition.
-
-24. **Find Large Files:**
-    ```bash
-    find / -type f -size +100M
-    ```
+### Find Large Files:**
+```bash
+find / -type f -size +100M
+```
     Searches for files larger than 100 megabytes on the system.
 
 ### Security:
