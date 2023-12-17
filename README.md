@@ -26,7 +26,7 @@
 
 In this section, provide a brief overview of the purpose of the Linux Command Bible and why users should find it valuable.
 
-## Getting Started
+# Getting Started
 
 If you're new to Linux, start here! This section will cover the basics, including how to access the command line and essential concepts.
 
