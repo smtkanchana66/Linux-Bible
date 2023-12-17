@@ -73,19 +73,19 @@ vi [filename]
 ```bash
 git clone https://github.com/username/repository.git
 ```
-### Check Git Status:
+#### Check Git Status:
 ```bash
 git status
 ```
-### Stage your changes:
+#### Stage your changes:
 ```bash
 git add README.md
 ```
-### Commit the changes:
+#### Commit the changes:
 ```bash
 git commit -m "Updated Linux Bible in README.md"
 ``` 
-### Push the changes to GitHub:
+#### Push the changes to GitHub:
 ```bash
 git push origin master
 ```
@@ -95,133 +95,137 @@ git push origin master
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
-### Check the status:
+#### Check the status:
 ```bash
 git status
 ```
 
-# System Administration
+## System Administration
 
 Delve into system administration commands for managing users, processes, and other system-related tasks.
 
-### Display System Information:
+#### Display System Information:
 ```bash
 uname -a
 ```
-### View CPU Information:
+#### View CPU Information:
 ```bash
 lscpu
 ```
-### Check Memory Usage:
+#### Check Memory Usage:
 ```bash
 free -m
 ```
-### Disk Space Usage:
+#### Disk Space Usage:
 ```bash
 df -h
 ```
 ## User Management
-### Add a User:
+#### Add a User:
 ```bash
 sudo adduser username
 ```
-### Add a User to the sudo Group:
+#### Add a User to the sudo Group:
 ```bash
 sudo usermod -aG sudo username
 ```
-### Change User Password:
+#### Change User Password:
 ```bash
 passwd username
 ```
-### Delete a User:
+#### Delete a User:
 ``` bash
 sudo deluser username
 ```
+
 ## System Maintenance
-### Update Package Lists:
+
+#### Update Package Lists:
 ```bash
 sudo apt update
 ```
-### Upgrade Installed Packages:
+#### Upgrade Installed Packages:
 ```bash
 sudo apt upgrade
 ```
-### Install a New Package:
+#### Install a New Package:
 ```bash
 sudo apt install packagename
 ```
-### Restart the System:
+#### Restart the System:
 ```bash
 sudo reboot
 ```
 ## System Logs
-### View System Logs:
+#### View System Logs:
 ```bash
 journalctl
 ```
-### Check Last System Reboot Time:
+#### Check Last System Reboot Time:
 ```bash
 last reboot
 ```
 
-### Process Management:
+## Process Management:
 
-### List Running Processes:
+#### List Running Processes:
 ```bash
 ps aux
 ```
-### Kill a Process:
+#### Kill a Process:
 ```bash
 kill PID
 ```
-### Check System Load:
+#### Check System Load:
 ```bash
 uptime
 ```
 
-### Monitor System Resources:
+#### Monitor System Resources:
 ```bash
 top
 ```
 
 ## Network Management:
-### Display Network Configuration:
+#### Display Network Configuration:
 ```bash
 ifconfig
 ```
-### Check Open Ports:
+#### Check Open Ports:
 ```bash
 netstat -tuln
 ```
-### Verify Connectivity:
+#### Verify Connectivity:
 ```bash
 ping example.com
 ```
-### View Network Statistics:
+#### View Network Statistics:
 ```bash
 netstat -s
 ```
 
 
-## Filesystem Management:
-### Check Filesystem Integrity:**
+## Filesystem Management
+#### Check Filesystem Integrity:
 ```bash
 fsck /dev/sda1
 ```
-### Find Large Files:**
+#### Find Large Files:
 ```bash
 find / -type f -size +100M
 ```
-    Searches for files larger than 100 megabytes on the system.
+>Searches for files larger than 100 megabytes on the system.
 
-### Security:
+## Security:
 
-25. **Update Security Packages:**
-    ```bash
-    sudo apt-get install unattended-upgrades
-    sudo dpkg-reconfigure --priority=low unattended-upgrades
-    ```
-    Configures unattended upgrades for automatic security updates.
+#### Update Security Packages:
+```bash
+sudo apt-get install unattended-upgrades
+```
+```bash
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+```
+>Configures unattended upgrades for automatic security updates.
 
 26. **Check for Rootkits:**
     ```bash
