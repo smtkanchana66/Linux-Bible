@@ -226,12 +226,11 @@ sudo apt-get install unattended-upgrades
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 >Configures unattended upgrades for automatic security updates.
-
-26. **Check for Rootkits:**
-    ```bash
-    rkhunter --check
-    ```
-    Scans for rootkits on the system.
+#### Check for Rootkits:
+```bash
+rkhunter --check
+```
+>Scans for rootkits on the system.
 
 27. **Firewall Configuration (using UFW):**
     ```bash
