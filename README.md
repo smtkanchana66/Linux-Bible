@@ -241,7 +241,7 @@ sudo ufw status
 ```bash
 sudo ufw enable
 ```
-    Checks the firewall status, allows SSH traffic, and enables the firewall.
+>Checks the firewall status, allows SSH traffic, and enables the firewall.
 
 These commands cover a broad range of system administration tasks. Depending on your specific environment and needs, you may use these commands or explore additional ones. Always be cautious when making system-level changes, especially in production environments. If you have specific questions or need guidance on a particular task, feel free to ask!
 
