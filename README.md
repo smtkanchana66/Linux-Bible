@@ -67,7 +67,9 @@ nano [filename]
 ```bash
 vi [filename]
 ```
-# Git command
+<br>
+
+## Git command
 
 #### Clone a Repository from GitHub:
 ```bash
@@ -99,6 +101,7 @@ git config --global user.name "Your Name"
 ```bash
 git status
 ```
+<br>
 
 ## System Administration
 
@@ -120,6 +123,8 @@ free -m
 ```bash
 df -h
 ```
+<br>
+
 ## User Management
 #### Add a User:
 ```bash
@@ -137,6 +142,7 @@ passwd username
 ``` bash
 sudo deluser username
 ```
+<br>
 
 ## System Maintenance
 
@@ -156,6 +162,8 @@ sudo apt install packagename
 ```bash
 sudo reboot
 ```
+<br>
+
 ## System Logs
 #### View System Logs:
 ```bash
@@ -165,6 +173,7 @@ journalctl
 ```bash
 last reboot
 ```
+<br>
 
 ## Process Management:
 
@@ -186,6 +195,8 @@ uptime
 top
 ```
 
+<br>
+
 ## Network Management:
 #### Display Network Configuration:
 ```bash
@@ -203,7 +214,7 @@ ping example.com
 ```bash
 netstat -s
 ```
-
+<br>
 
 ## Filesystem Management
 #### Check Filesystem Integrity:
@@ -215,6 +226,8 @@ fsck /dev/sda1
 find / -type f -size +100M
 ```
 >Searches for files larger than 100 megabytes on the system.
+
+<br>
 
 ## Security:
 
@@ -242,10 +255,7 @@ sudo ufw status
 sudo ufw enable
 ```
 >Checks the firewall status, allows SSH traffic, and enables the firewall.
-
-These commands cover a broad range of system administration tasks. Depending on your specific environment and needs, you may use these commands or explore additional ones. Always be cautious when making system-level changes, especially in production environments. If you have specific questions or need guidance on a particular task, feel free to ask!
-
-Certainly! Let's explore some additional system administration commands for different aspects of managing a Linux system:
+<!--
 
 ### System Information:
 
