@@ -467,5 +467,5 @@ We welcome contributions! If you have additional commands, examples, or improvem
 
 ## License
 
-This Linux Command Bible is licensed under [License Name]. See the [LICENSE](LICENSE) file for details.
+This Linux Command Bible is licensed under [Apache-2.0 license]. See the [LICENSE](LICENSE) file for details.
 
