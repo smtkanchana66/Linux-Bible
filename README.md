@@ -255,21 +255,20 @@ sudo ufw status
 sudo ufw enable
 ```
 >Checks the firewall status, allows SSH traffic, and enables the firewall.
-<!--
 
-### System Information:
 
-28. **List USB Devices:**
-    ```bash
-    lsusb
-    ```
-    Displays information about USB devices connected to the system.
+## System Information:
+#### List USB Devices:
+```bash
+lsusb
+```
+>Displays information about USB devices connected to the system.
 
-29. **Check PCI Devices:**
-    ```bash
-    lspci
-    ```
-    Lists PCI devices connected to the system.
+#### Check PCI Devices:
+```bash
+lspci
+```
+>Lists PCI devices connected to the system.
 
 ### User and Group Management:
 
