@@ -272,11 +272,11 @@ lspci
 
 ### User and Group Management:
 
-30. **List All Users:**
-    ```bash
-    getent passwd
-    ```
-    Shows a list of all user accounts on the system.
+#### List All Users:
+```bash
+getent passwd
+```
+>Shows a list of all user accounts on the system.
 
 31. **List All Groups:**
     ```bash
