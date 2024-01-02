@@ -277,18 +277,17 @@ lspci
 getent passwd
 ```
 >Shows a list of all user accounts on the system.
+#### List All Groups:
+```bash
+getent group
+```
+>Displays a list of all groups on the system.
 
-31. **List All Groups:**
-    ```bash
-    getent group
-    ```
-    Displays a list of all groups on the system.
-
-32. **Change User's Primary Group:**
-    ```bash
-    usermod -g newgroup username
-    ```
-    Changes the primary group of a user.
+#### Change User's Primary Group:
+```bash
+usermod -g newgroup username
+```
+>Changes the primary group of a user.
 
 ### Disk Management:
 
