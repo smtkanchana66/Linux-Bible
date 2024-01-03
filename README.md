@@ -290,12 +290,11 @@ usermod -g newgroup username
 >Changes the primary group of a user.
 
 ### Disk Management:
-
-33. **Check Disk I/O Statistics:**
-    ```bash
-    iostat
-    ```
-    Shows disk I/O statistics, including read and write rates.
+#### Check Disk I/O Statistics:
+```bash
+iostat
+```
+>Shows disk I/O statistics, including read and write rates.
 
 34. **View Filesystem Mount Points:**
     ```bash
