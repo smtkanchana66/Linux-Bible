@@ -295,12 +295,11 @@ usermod -g newgroup username
 iostat
 ```
 >Shows disk I/O statistics, including read and write rates.
-
-34. **View Filesystem Mount Points:**
-    ```bash
-    df -hT
-    ```
-    Displays information about mounted filesystems, including their type.
+#### View Filesystem Mount Points:**
+```bash
+df -hT
+```
+>Displays information about mounted filesystems, including their type.
 
 ### System Performance Monitoring:
 
