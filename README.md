@@ -303,12 +303,12 @@ df -hT
 
 ### System Performance Monitoring:
 
-35. **Monitor CPU Usage (using `htop`):**
-    ```bash
-    sudo apt install htop
-    htop
-    ```
-    Interactive process viewer that provides a visual representation of CPU and memory usage.
+# Monitor CPU Usage (using `htop`)
+```bash
+sudo apt install htop
+htop
+```
+>Interactive process viewer that provides a visual representation of CPU and memory usage.
 
 36. **Check System Temperature (using `lm-sensors`):**
     ```bash
