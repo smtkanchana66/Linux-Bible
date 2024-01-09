@@ -310,12 +310,12 @@ htop
 ```
 >Interactive process viewer that provides a visual representation of CPU and memory usage.
 
-36. **Check System Temperature (using `lm-sensors`):**
-    ```bash
-    sudo apt install lm-sensors
-    sensors
-    ```
-    Shows temperature information for various system components.
+### Check System Temperature (using `lm-sensors`)
+```bash
+sudo apt install lm-sensors
+sensors
+```
+>Shows temperature information for various system components.
 
 ### Software Package Management:
 
