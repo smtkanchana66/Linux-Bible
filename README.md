@@ -303,14 +303,14 @@ df -hT
 
 ### System Performance Monitoring:
 
-# Monitor CPU Usage (using `htop`)
+#### Monitor CPU Usage (using `htop`)
 ```bash
 sudo apt install htop
 htop
 ```
 >Interactive process viewer that provides a visual representation of CPU and memory usage.
 
-### Check System Temperature (using `lm-sensors`)
+#### Check System Temperature (using `lm-sensors`)
 ```bash
 sudo apt install lm-sensors
 sensors
@@ -319,11 +319,11 @@ sensors
 
 ### Software Package Management:
 
-37. **Search for a Package:**
-    ```bash
-    apt search packagename
-    ```
-    Searches for packages related to the specified name.
+#### Search for a Package:
+```bash
+apt search packagename
+```
+>Searches for packages related to the specified name.
 
 38. **Remove Unused Dependencies:**
     ```bash
