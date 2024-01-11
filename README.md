@@ -325,11 +325,11 @@ apt search packagename
 ```
 >Searches for packages related to the specified name.
 
-38. **Remove Unused Dependencies:**
-    ```bash
-    sudo apt autoremove
-    ```
-    Removes packages that were installed as dependencies but are no longer needed.
+#### Remove Unused Dependencies:
+```bash
+sudo apt autoremove
+```
+>Removes packages that were installed as dependencies but are no longer needed.
 
 ### System Backup and Restore:
 
