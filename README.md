@@ -333,11 +333,11 @@ sudo apt autoremove
 
 ### System Backup and Restore:
 
-39. **Create a System Backup (using `tar`):**
-    ```bash
-    tar -cvzf backup.tar.gz /path/to/backup
-    ```
-    Creates a compressed archive of specified files or directories.
+#### Create a System Backup (using `tar`):
+ ```bash
+ tar -cvzf backup.tar.gz /path/to/backup
+ ```
+ >Creates a compressed archive of specified files or directories.
 
 40. **Restore from Backup:**
     ```bash
