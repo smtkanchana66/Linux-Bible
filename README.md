@@ -324,7 +324,6 @@ sensors
 apt search packagename
 ```
 >Searches for packages related to the specified name.
-
 #### Remove Unused Dependencies:
 ```bash
 sudo apt autoremove
