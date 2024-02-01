@@ -347,11 +347,11 @@ tar -xvzf backup.tar.gz -C /path/to/restore
 
 ### System Maintenance and Updates:
 
-41. **Check for System Updates (using `apt`):**
-    ```bash
-    sudo apt update
-    ```
-    Refreshes the package lists to check for available updates.
+####Check for System Updates (using `apt`):
+```bash
+sudo apt update
+```
+>Refreshes the package lists to check for available updates.
 
 42. **Clean Package Cache:**
     ```bash
