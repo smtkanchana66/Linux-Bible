@@ -353,11 +353,11 @@ sudo apt update
 ```
 >Refreshes the package lists to check for available updates.
 
-42. **Clean Package Cache:**
-    ```bash
-    sudo apt clean
-    ```
-    Removes downloaded package files from the package cache.
+### Clean Package Cache:
+```bash
+sudo apt clean
+```
+> Removes downloaded package files from the package cache.
 
 43. **Monitor System Logs (using `journalctl`):**
     ```bash
