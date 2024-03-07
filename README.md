@@ -8,7 +8,7 @@
 
 
 
-## Table of Contents
+# Table of Contents
 
 1. [Introduction](#introduction)
 2. [Getting Started](#getting-started)
@@ -22,15 +22,15 @@
 10. [Contributing](#contributing)
 11. [License](#license)
 
-# Introduction
-
-In this section, provide a brief overview of the purpose of the Linux Command Bible and why users should find it valuable.
-
 # Getting Started
 
 If you're new to Linux, start here! This section will cover the basics, including how to access the command line and essential concepts.
 
+
+
+
 # Basic Commands
+
 #### Change Directory
 ```bash
 cd [directory]
@@ -69,7 +69,10 @@ vi [filename]
 ```
 <br>
 
-## Git command
+
+
+
+# Git command
 
 #### Clone a Repository from GitHub:
 ```bash
@@ -91,6 +94,7 @@ git commit -m "Updated Linux Bible in README.md"
 ```bash
 git push origin master
 ```
+> [!IMPORTANT]
 > If you're working on a branch other than master, replace it with the appropriate branch name.
 > If this is your first time pushing to the repository, Git may prompt you to configure your username and email:
 ```bash
@@ -103,9 +107,10 @@ git status
 ```
 <br>
 
-## System Administration
 
-Delve into system administration commands for managing users, processes, and other system-related tasks.
+
+
+# System Administration
 
 #### Display System Information:
 ```bash
@@ -125,7 +130,10 @@ df -h
 ```
 <br>
 
-## User Management
+
+
+# User Management 
+
 #### Add a User:
 ```bash
 sudo adduser username
@@ -144,7 +152,9 @@ sudo deluser username
 ```
 <br>
 
-## System Maintenance
+
+
+# System Maintenance
 
 #### Update Package Lists:
 ```bash
@@ -164,7 +174,11 @@ sudo reboot
 ```
 <br>
 
-## System Logs
+
+
+
+# System Logs
+
 #### View System Logs:
 ```bash
 journalctl
@@ -175,7 +189,9 @@ last reboot
 ```
 <br>
 
-## Process Management:
+
+
+# Process Management
 
 #### List Running Processes:
 ```bash
@@ -197,7 +213,11 @@ top
 
 <br>
 
-## Network Management:
+
+
+
+# Network Management
+
 #### Display Network Configuration:
 ```bash
 ifconfig
@@ -216,7 +236,10 @@ netstat -s
 ```
 <br>
 
-## Filesystem Management
+
+
+# Filesystem Management
+
 #### Check Filesystem Integrity:
 ```bash
 fsck /dev/sda1
@@ -225,11 +248,14 @@ fsck /dev/sda1
 ```bash
 find / -type f -size +100M
 ```
+> [!NOTE]
 >Searches for files larger than 100 megabytes on the system.
-
 <br>
 
-## Security:
+
+
+
+# Security
 
 #### Update Security Packages:
 ```bash
@@ -238,12 +264,10 @@ sudo apt-get install unattended-upgrades
 ```bash
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
->Configures unattended upgrades for automatic security updates.
 #### Check for Rootkits:
 ```bash
 rkhunter --check
 ```
->Scans for rootkits on the system.
 #### Firewall Configuration (using UFW):
 ```bash
 sudo ufw status
@@ -254,60 +278,68 @@ sudo ufw status
 ```bash
 sudo ufw enable
 ```
+> [!NOTE]
 >Checks the firewall status, allows SSH traffic, and enables the firewall.
+<br>
 
 
-## System Information:
+# System Information
+
 #### List USB Devices:
 ```bash
 lsusb
 ```
->Displays information about USB devices connected to the system.
-
 #### Check PCI Devices:
 ```bash
 lspci
 ```
+> [!NOTE]
 >Lists PCI devices connected to the system.
+<br>
 
-### User and Group Management:
+# User and Group Management
 
 #### List All Users:
 ```bash
 getent passwd
 ```
+> [!NOTE]
 >Shows a list of all user accounts on the system.
+
 #### List All Groups:
 ```bash
 getent group
 ```
->Displays a list of all groups on the system.
-
 #### Change User's Primary Group:
 ```bash
 usermod -g newgroup username
 ```
->Changes the primary group of a user.
+<br>
 
-### Disk Management:
+
+
+# Disk Management
+
 #### Check Disk I/O Statistics:
 ```bash
 iostat
 ```
->Shows disk I/O statistics, including read and write rates.
 #### View Filesystem Mount Points:**
 ```bash
 df -hT
 ```
->Displays information about mounted filesystems, including their type.
+<br>
 
-### System Performance Monitoring:
+
+
+# System Performance Monitoring
 
 #### Monitor CPU Usage (using `htop`)
 ```bash
 sudo apt install htop
 htop
 ```
+> [!NOTE]
 >Interactive process viewer that provides a visual representation of CPU and memory usage.
 
 #### Check System Temperature (using `lm-sensors`)
@@ -315,150 +347,116 @@ htop
 sudo apt install lm-sensors
 sensors
 ```
->Shows temperature information for various system components.
+<br>
 
-### Software Package Management:
+
+
+# Software Package Management
 
 #### Search for a Package:
 ```bash
 apt search packagename
 ```
->Searches for packages related to the specified name.
 #### Remove Unused Dependencies:
 ```bash
 sudo apt autoremove
 ```
->Removes packages that were installed as dependencies but are no longer needed.
+<br>
 
-### System Backup and Restore:
+
+
+# System Backup and Restore
 
 #### Create a System Backup (using `tar`):
  ```bash
  tar -cvzf backup.tar.gz /path/to/backup
  ```
- >Creates a compressed archive of specified files or directories.
 
 #### Restore from Backup:
 ```bash
 tar -xvzf backup.tar.gz -C /path/to/restore
 ```
->Extracts files from a compressed archive to the specified restore path.
 <br>
 
-### System Maintenance and Updates:
 
-####Check for System Updates (using `apt`):
+# System Maintenance and Updates
+
+#### Check for System Updates (using `apt`):
 ```bash
 sudo apt update
 ```
->Refreshes the package lists to check for available updates.
 
 ### Clean Package Cache:
 ```bash
 sudo apt clean
 ```
-> Removes downloaded package files from the package cache.
+### Monitor System Logs (using `journalctl`):
+```bash
+journalctl -xe
+```
+<br>
+    
+# Network Configuration and Troubleshooting:
 
-43. **Monitor System Logs (using `journalctl`):**
-    ```bash
-    journalctl -xe
-    ```
-    Provides a detailed view of the system logs, aiding in troubleshooting.
+#### Configure Network Interfaces:
+```bash
+sudo nano /etc/network/interfaces
+```
+#### DNS Troubleshooting (using `nslookup` or `dig`):
+```bash
+nslookup example.com
+```
+or
+```bash
+dig example.com
+```
+<br>
 
-### Network Configuration and Troubleshooting:
 
-44. **Configure Network Interfaces:**
-    ```bash
-    sudo nano /etc/network/interfaces
-    ```
-    Edit the network configuration file to set up static IP addresses and other network parameters.
 
-45. **DNS Troubleshooting (using `nslookup` or `dig`):**
-    ```bash
-    nslookup example.com
-    ```
-    or
-    ```bash
-    dig example.com
-    ```
-    Query DNS servers to troubleshoot and verify domain resolution.
+# Security and Permissions
 
-### Security and Permissions:
+#### Check File Permissions:
+```bash
+ls -l filename
+```
 
-46. **Check File Permissions:**
-    ```bash
-    ls -l filename
-    ```
-    Displays detailed file permissions, owners, and groups.
+#### Check System Security Updates (using `unattended-upgrades`):
+```bash
+cat /var/log/unattended-upgrades/unattended-upgrades.log
+```
+<br>
 
-47. **Check System Security Updates (using `unattended-upgrades`):**
-    ```bash
-    cat /var/log/unattended-upgrades/unattended-upgrades.log
-    ```
-    Reviews logs for automatic security updates.
 
-### System Monitoring and Resource Usage:
+# System Monitoring and Resource Usage:
 
-48. **Check System Resource Usage (using `sar`):**
-    ```bash
-    sudo apt install sysstat
-    sar -u
-    ```
-    Collects, reports, or saves system activity information.
+#### Check System Resource Usage (using `sar`):
+```bash
+sudo apt install sysstat
+sar -u
+```
+#### Monitor Disk Space Usage (using `du`):
+```bash
+du -h
+```
+<br>
 
-49. **Monitor Disk Space Usage (using `du`):**
-    ```bash
-    du -h
-    ```
-    Shows the disk space usage of files and directories in the current location.
+# Advanced Process Management
 
-### Advanced Process Management:
+#### Monitor Process Resources (using `pidstat`):
+```bash
+sudo apt install sysstat
+pidstat 1
+```
 
-50. **Monitor Process Resources (using `pidstat`):**
-    ```bash
-    sudo apt install sysstat
-    pidstat 1
-    ```
-    Monitors resource usage of processes, including CPU, memory, and I/O.
+# Background Process Management (using `nohup`):
+```bash
+nohup command &
+```
+<br>
 
-51. **Background Process Management (using `nohup`):**
-    ```bash
-    nohup command &
-    ```
-    Runs a command immune to hangups, with output directed to a file.
 
-### Customization and Scripting:
-
-52. **Custom Bash Scripts:**
-    Create custom Bash scripts to automate repetitive tasks or perform complex operations.
-
-53. **Configure Shell Environment (using `.bashrc`):**
-    Edit the `.bashrc` file to customize the shell environment for users.
-
-These commands cover a broader range of tasks, including network configuration, security, permissions, advanced process management, and customization. Always exercise caution, especially when working with system configurations and sensitive data. If you have specific scenarios or tasks in mind, feel free to ask for more detailed guidance!
--->
-
-## Network Commands
-
-Discover commands for network configuration, troubleshooting, and other networking essentials.
-
-## Package Management
-
-Explore package management commands for installing, updating, and removing software packages.
-
-## Scripting and Automation
-
-Get into the world of scripting and automation with examples and explanations of scripting languages commonly used in Linux.
-
-## Tips and Tricks
-
-This section will provide various tips and tricks to enhance your Linux command-line experience.
-
-## Contributing
-
-We welcome contributions! If you have additional commands, examples, or improvements, please follow our contribution guidelines.
-
-## License
+# License
 
 This Linux Command Bible is licensed under [Apache-2.0 license]. See the [LICENSE](LICENSE) file for details.
 
