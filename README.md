@@ -10,17 +10,30 @@
 
 # Table of Contents
 
-1. [Introduction](#introduction)
-2. [Getting Started](#getting-started)
-3. [Basic Commands](#basic-commands)
-4. [File and Directory Management](#file-and-directory-management)
-5. [System Administration](#system-administration)
-6. [Network Commands](#network-commands)
-7. [Package Management](#package-management)
-8. [Scripting and Automation](#scripting-and-automation)
-9. [Tips and Tricks](#tips-and-tricks)
-10. [Contributing](#contributing)
-11. [License](#license)
+
+1. [Getting Started](#getting-started)
+2. [Basic Commands](#basic-commands)
+3. [Git command](#Git-command)
+4. [User Management](#User-Management)
+5. [System Maintenance](#System-Maintenance)
+6. [System Logs](#System-Log)
+7. [Process Management](#Process-Management)
+8. [Network Management](#Network-Management)
+9. [Filesystem Management](#Filesystem-Management)
+10. [Security](#Security)
+11. [Disk Management](#Disk-Management)
+12. [System Performance Monitoring](#System-Performance-Monitoring)
+13. [Software Package Management](#Software-Package-Management)
+14. [System Backup and Restore](#System-Backup-and-Restore)
+15. [System Maintenance and Updates](#System-Maintenance-and-Updates)
+16. [Network Configuration and Troubleshooting:](#Network-Configuration-and-Troubleshooting)
+17. [Security and Permissions](#Security-and-Permissions)
+18. [System Monitoring and Resource Usage2](#System-Monitoring-and-Resource-Usage)
+19. [Advanced Process Management](#Advanced-Process-Management)
+
+
+11. [Contributing](#contributing)
+12. [License](#license)
 
 # Getting Started
 
@@ -395,8 +408,10 @@ sudo apt clean
 journalctl -xe
 ```
 <br>
+
+
     
-# Network Configuration and Troubleshooting:
+# Network Configuration and Troubleshooting
 
 #### Configure Network Interfaces:
 ```bash
@@ -428,7 +443,8 @@ cat /var/log/unattended-upgrades/unattended-upgrades.log
 <br>
 
 
-# System Monitoring and Resource Usage:
+
+# System Monitoring and Resource Usage
 
 #### Check System Resource Usage (using `sar`):
 ```bash
@@ -441,6 +457,7 @@ du -h
 ```
 <br>
 
+
 # Advanced Process Management
 
 #### Monitor Process Resources (using `pidstat`):
@@ -448,8 +465,7 @@ du -h
 sudo apt install sysstat
 pidstat 1
 ```
-
-# Background Process Management (using `nohup`):
+#### Background Process Management (using `nohup`):
 ```bash
 nohup command &
 ```
