@@ -1,5 +1,3 @@
-
-
 # Linux Command Bible
 
 <p align="center">
